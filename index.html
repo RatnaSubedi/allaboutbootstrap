@@ -3,15 +3,20 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>HIMANI PHOTO STUDIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="styles.css" rel="stylesheet">
  </head>
  <body>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#" >Himani Photo Studio</a>
-    <ul class="navbar-nav nav-tabs   flex-row gap-4 justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
         <a class="nav-link active"  aria-current="page" href="#home">Home</a>
       </li>
@@ -22,27 +27,75 @@
         <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Type here" aria-label="Search"/>
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
+  </div>
 </nav>
 <!----hero section -->
 <main class="container-fluid p-0">
-  <section id="section-home" class="hero-section d-flex flex-column justify-content-top align-items-center text-center text-white">
+  <section id="section-home" class="hero-section d-flex flex-column justify-content-start  align-items-center text-center text-white">
 <div class="hero-content">
 
   <h1 class="fw-bold"> Welcome to Himani PhotoStudio</h1>
-    <p class="mx-auto p-5 position-absolute  start-50 translate-middle text-white">Discover talented photographers and capture your moment right at your fingertips.</p>  
-    
-</section>
-<a href="portfolio.html" class="btn btn-primary  btn-lg"> Photographer's Portfolio</a>
+    <p class="mx-auto p-5 position-absolute  start-50 translate-middle text-white">Discover talented photographers and capture your moment right at your fingertips.</p>   
 </div>
+<a href="portfolio.html" class="btn btn-primary  btn-lg"> Photographer's Portfolio</a>
+</section><br><br>
+ 
+<!----filtering section-->
+<div class=" container filterbox">
+<section class="filter-section">
+  <h4>Filter photographers</h4>
+  <form class="row gy-2 gx-3 align-items-center">
+          <div class="col-sm-4 col-md-3">
+            <label for="StyleSelect" class="form-label">Genre of Photography</label>
+            <select class="form-select" id="styleSelect" aria-label="Select Style">
+            <option selected>select option </option>
+               <option>Portrait</option>
+               <option>Wedding</option>
+               <option>Nature</option>
+               <option>Fashion</option>
+               <option>Sports</option>   
+             </select>
+          </div>
+</section><br><br>
+<div class=" col-sm-4 col-md-3">
+  <label for="Location" class="location" >Enter your city</label>
+  <input  type="text" id="location" placeholder="location">
+</div><br><br>
+<div class=" col-sm-4 col-md-3">
+  <label for="range" class="location">price range</label>
+  <input type="text" id="range" placeholder=" price range">
+</div><br><br>
+<div class="col-sm-4 col-md-3">
+  <button type="submit" class="btn btn-primary width-50">Apply</button>
+</div>
+</div>
+</main>
 <section id="about" class="my-5 bg-white p-4 rounded">
     <div class="container">
       <h2>ABOUT US</h2>
       <p>Himani Photo Studio is a collection of experienced photographers with a shared passion for storytelling through images. From intimate portraits to expansive landscapes, we treat every shoot as an opportunity to create art.</p>
     </div>
+</section>
+<!---contact here-->
+<section id="contact" class="bg-light p-4 rounded">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> +61 423 333 444</p>
+      <p><strong>Email:</strong> studiolens@gmail.com.au</p>
+  </div>
+</section>
+<!---footer here-->
+<footer class="bg-dark text-white text-center p-0">
+  @2025 Himani photo Studio. All rights reserved.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>  
  </body>
  </html>

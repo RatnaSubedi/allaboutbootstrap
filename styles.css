@@ -1,4 +1,9 @@
- .hero-section{
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+     font-family: "Rubik", sans-serif;
+}
+.hero-section{
     background: url('images_used/homepage.jpg')center center/cover no-repeat;
     height: 100vh;
     position: relative;
