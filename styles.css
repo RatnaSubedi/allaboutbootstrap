@@ -1,0 +1,14 @@
+ .hero-section{
+    background: url('images_used/homepage.jpg')center center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+ }
+
+ .hero-content{
+padding: 20px;
+background:rgba(0,0,0,0.4);
+border-radius: 10px;
+ }
+ .hero-section h1, .hero-sectionp{
+    text-shadow: none;
+ }
