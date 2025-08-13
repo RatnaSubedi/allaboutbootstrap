@@ -24,3 +24,10 @@ border-radius: 10px;
    transform: scale(1.1);
    transition: o.2 ease;
 }
+.form-floating{
+   padding: 10px;
+   width: 50rem;
+}
+.heading{
+   text-align: centre;
+}
