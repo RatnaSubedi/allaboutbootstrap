@@ -55,10 +55,10 @@
 <div class=" container filterbox">
 <section class="filter-section">
   <h4>Filter photographers</h4>
-  <form class="row gy-2 gx-3 align-items-center">
+  <form action="items-detail.html" method="get" class="row gy-2 gx-3 align-items-center">
           <div class="col-sm-4 col-md-3">
             <label for="StyleSelect" class="form-label">Genre of Photography</label>
-            <select class="form-select" id="styleSelect" aria-label="Select Style">
+            <select class="form-select" id="styleSelect" name="StyleSelect" aria-label="Select Style">
             <option selected>select option </option>
                <option>Portrait</option>
                <option>Wedding</option>
@@ -70,11 +70,11 @@
 </section><br><br>
 <div class=" col-sm-4 col-md-3">
   <label for="Location" class="location" >Enter your city</label>
-  <input  type="text" id="location" placeholder="location">
+  <input  type="text" id="location" name="location"  placeholder="location">
 </div><br><br>
 <div class=" col-sm-4 col-md-3">
   <label for="range" class="location">price range</label>
-  <input type="text" id="range" placeholder=" price range">
+  <input type="text" id="range" name="range" min="100$" max="500$"  placeholder=" price range">
 </div><br><br>
 <div class="col-sm-4 col-md-3">
   <button type="submit" class="btn btn-primary width-50">Apply</button>
