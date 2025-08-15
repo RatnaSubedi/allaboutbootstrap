@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVANA PHOTO STUDIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+ </head>
+ <body>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" >Savana Photo Studio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link active"  href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#index.html">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a href="vendor-gallery.html" class="nav-link"> Public Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vendor-uoload.html">Vendor Upload</a>
+      </li>
+    </ul>
+    
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Type here" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+  </div>
+</nav>
+<!----- photographers login form-->
+<div class="container-fluid my-5 col-4">
+    <form action="/action-page.php">
+        <h2>Login Form</h2>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+             <input type="email" id="email" class="form-control" placeholder="enter your email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="pwd" id="password" class="form-control" placeholder="enter your password">
+        </div>
+           
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember">Remember
+            </label>
+        </div>
+        <button type="button" class="btn btn-secondary">SignUp</button>
+    </form>
+</div>
+<!----vendor only form-->
+<div class="container my-5 col-4">
+    <h2 class="mb-4 text-center">upload Your Item</h2>
+    <form>
+  <div class="mb-3 mx-auto">
+    <label for="title" class="form-label">Item Name</label>
+    <input type="text" class="form-control"  placeholder="Enter name of item">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description Of Item</label>
+    <textarea class="form-control" rows="2" placeholder="Describe item"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="number" id="price" class="form-control" placeholder=" ">
+  </div>
+    <div class="mb-3">
+  <label for="formFileSm" class="form-label">Upload photo</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+  <button type="submit" class="btn btn-outline-primary">Submit</button>
+</form>
+  </section>
+</div>
+    <footer class="bg-dark text-white text-center py-3">
+        @2025 Savana photo Studio. All rights reserved.
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

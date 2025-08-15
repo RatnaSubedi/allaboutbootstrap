@@ -9,22 +9,28 @@
   </head>
   <body>
     <!----navbar-->
-    <nav class="navbar navbar-expand-lg text-white-bold bg-body-tertiary ">
+    <nav class="navbar navbar-expand-lg  bg-body-white ">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html" >Savana Photo Studio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+        <a class="nav-link active"  href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">About Us</a>
+        <a class="nav-link active" href="index.html.html">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Contact</a>
+        <a class="nav-link" href="index.html.html">Contact</a>
+      </li>
+      <li class="nav-item">
+      <a href="vendor-gallery.html" class="nav-link"> Public Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vendor-uoload.html">Vendor Upload</a>
       </li>
     </ul>
     
@@ -39,21 +45,19 @@
 <main>
 <!----something about photographer-->
 <header class="text-center py-5 bg-body-tertiary">
-  <div class="container-fluid">
     <h1>Photographer's portfolio</h1>
-    <p class="HI">Choose your own photographer</p>
-  </div>
+    <p class="lead">Choose your own photographer</p>
 </header>
-<section class="container ">
+<section class="container my-5">
   <div class="row g-4">
        <!--- first photographer-->
       <div class="col-md-6" >
         <div class="card h-80">
           <div class="row g-0">
           <div class="col-md-5">
-         <img class="profile-img" src="images_used/ani-profile.jpg"  style="width: 250px;" alt="Ani Jonshon">
+         <img class="img-fluid rounded" src="images_used/ani-profile.jpg"  style="width: 250px;" alt="Ani Jonshon">
          </div>
-         <div class="col-md-6">
+         <div class="col-md-7">
          <div class="card-body">
            <h4 class="card-title">Ani Johnson</h4>
            <p class="card-text"> Portrait and fashion photography with a natural style</p>
@@ -61,23 +65,20 @@
           </div>
         </div>
       </div>
-    </div>
     <!---- some of Ani's work-->
       <div class="row g-3 mt-3">
-        <div class="col-6">
-              <img src="images_used/Anifashion.jpg" class="image" alt="model">
-              <p>Model/ Girl</p>
+        <div class="col-6 text-center">
+              <img src="images_used/Anifashion.jpg" class="img-fluid rounded" alt="model">
+              <p>Model/ Girl/portrait</p>
         </div>
-          <div class="col-6">
+          <div class="col-6 text-center">
               <img src="images_used/aniportrait.jpg" class="image" alt="pic">
               <p>sample portrait</p>
           </div>
-        </div>
-          <div class="my-3">
-              <input type="datetime" class="form-control" id="date" placeholder="Appointment date" required>
-          <a href="#" class="btn btn-outline-primary">Book</a>
-         </div>
-       </div><br><br>
+      </div>
+      <button type="button" class="btn btn-info" style="width: 100px;;">Book</button> 
+    </div>
+  </div><br><br>
 
    <!---second photographer-->
   <div class="col-md-6" >
@@ -86,7 +87,7 @@
         <div class="col-md-5">
       <img class="profile-img" src="images_used/maya-profile.jpg" style="width: 250px;"  alt="maya kashyap">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
       <div class="card-body">
         <h4 class="card-title">Maya kashyap</h4>
         <p class="card-text">Known for the iconic Black and white photography</p>
@@ -94,47 +95,25 @@
       </div>
     </div> 
   </div>
-</div>
 <!----some of Maya's work-->
       <div class="row g-3 mt-3">
-        <div class="col-6">
+        <div class="col-6 text-center">
           <img src="images_used/bwanimal.jpg" class="image" alt="dog">
           <p>Black and white image of a dog</p>
         </div>
-        <div class="col-6">
-          <img src="images_used/vintage.jpg" class="image" alt="camera">
-           <p>Vintage Camera</p>
-        </div>
+         <div class="col-6 text-center">
+           <img src="images_used/vintage.jpg" class="image" alt="camera">
+            <p>Vintage Camera</p>
+         </div>
       </div>
-        <div class="mb-3">
-         <input type="datetime" class="form-control" id="date" placeholder="Appointment date" required>
-          <a href="#" class="btn btn-outline-primary">Book</a>
-        </div>
-      </div>
+      <button type="button" class="btn btn-info" style="width: 100px;">Book</button>
     </div>
   </section>
-  <!----vendor only form-->
-  <section class="container my-5">
-    <h3 class="heading"> Vendor only form</h3>
-    <form action="/action_page.php">
-  <div class="mb-3 mt-3 mx-auto">
-    <label for="email" class="form-label">Email:</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  <div class="container my-5 text center">
+    <a href="checkout.html" class="btn btn-success">CHECKOUT</a>
   </div>
-  <div class="mb-3">
-    <label for="pwd" class="form-label">Password:</label>
-    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-  </div>
-  <div class="form-check mb-3">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
-  </section>
-  </main>
-<footer class="bg-dark text-white text-center p-0">
+</main>
+<footer class="bg-dark text-white text-center py-3">
   @2025 Savana photo Studio. All rights reserved.
 </footer>
 

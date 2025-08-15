@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAVANA PHOTO STUDIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="styles.css" rel="stylesheet">
  </head>
  <body>
     <nav class="navbar navbar-expand-lg bg-body-white">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html" >Savana Photo Studio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+        <a class="nav-link active"  href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About Us</a>
@@ -27,7 +26,10 @@
         <a class="nav-link" href="#contact">Contact</a>
       </li>
       <li class="nav-item">
-      <a href="portfolio.html" class="nav-link"> Photographer Portfolio</a>
+      <a href="vendor-gallery.html" class="nav-link"> Public Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vendor-uoload.html">Vendor Upload</a>
       </li>
     </ul>
     
@@ -39,43 +41,49 @@
   </div>
 </nav>
 <!----hero section -->
-<main class="container-fluid p-0">
+<header class="bg-body-tertiary text-center py-5">
   <section id="section-home" class="hero-section d-flex flex-column justify-content-start  align-items-center text-center text-white">
 <div class="hero-content">
 
-  <h1 class="fw-bold"> Welcome to Savana PhotoStudio</h1>
+  <h1 class="display-4"> Welcome to Savana PhotoStudio</h1>
   <br>
-    <p class="mx-auto p-5 position-absolute  start-50 translate-middle text-white">Discover talented photographers and capture your moment right at your fingertips.</p>   
+    <p class="lead">Discover talented photographers and capture your moment right at your fingertips.</p> 
+    <a href="vendor-gallery.html">View Our Gallery</a>  
 </div>
 </section><br><br>
  
 <!----filtering section-->
-<div class=" container filterbox">
-<section class="filter-section">
-  <h4>Filter photographers</h4>
-  <form action="items-detail.html" method="get" class="row gy-2 gx-3 align-items-center">
-          <div class="col-sm-4 col-md-3">
-            <label for="StyleSelect" class="form-label">Genre of Photography</label>
-            <select class="form-select" id="styleSelect" name="StyleSelect" aria-label="Select Style">
-            <option selected>select option </option>
+<div class="col-4">
+  <label class="form-label">Filter photographers</label>
+  <select class="form-select">
+    <option selected>All Photographers</option>
+    <option value="ani">Ani Johnson</option>
+    <option value="maya">Maya Kashyap</option>
+    </select>
+</div> 
+    <div class="col-4">
+            <label class="form-label">Genre of Photography</label>
+            <select class="form-select">
+              <option selected>select option </option>
                <option>Portrait</option>
                <option>Wedding</option>
                <option>Nature</option>
                <option>Fashion</option>
                <option>Sports</option>   
-             </select>
+            </select>
           </div>
-</section><br><br>
-<div class=" col-sm-4 col-md-3">
+          <br>
+<div class="col-4">
   <label for="Location" class="location" >Enter your city</label>
   <input  type="text" id="location" name="location"  placeholder="location">
-</div><br><br>
-<div class=" col-sm-4 col-md-3">
-  <label for="range" class="location">price range</label>
-  <input type="text" id="range" name="range"  placeholder=" price range">
-</div><br><br>
-<div class="col-sm-4 col-md-3">
-  <button type="submit" class="btn btn-primary width-50">Apply</button>
+</div><br>
+<div class="col-4">
+  <label for="range" class="price">price range</label>
+  <input type="text" id="range" name="range"  placeholder=" price">
+</div><br>
+<div class="col-4">
+  <button class="btn btn-primary width-100">Apply</button>
+  <button class="btn btn-outline-secondary">Reset</button>
 </div>
 </div>
 </main>
@@ -94,7 +102,7 @@
   </div>
 </section>
 <!---footer here-->
-<footer class="bg-dark text-white text-center p-0">
+<footer class="bg-dark text-white text-center py-3">
   @2025 Savana photo Studio. All rights reserved.
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>  
